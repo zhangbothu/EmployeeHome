@@ -1,0 +1,146 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/downloadCenter/downloadCenter",
+			"style": {
+				"navigationBarTitleText": "下载中心",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		{
+			"path": "pages/modifyDocument/modifyDocument",
+			"style": {
+				"navigationBarTitleText": "修改文档"
+			}
+		},
+		{
+			"path": "pages/addDocument/addDocument",
+			"style": {
+				"navigationBarTitleText": "上传文档"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "管理",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/mine/minePage",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/setting/setting",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/goToDetail/goToDetail",
+			"style": {
+				"navigationBarTitleText": "文档详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/setting/aboutUs",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/setting/changePwd1",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/setting/changePwd2",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/setting/faceEnroll",
+			"style": {
+				"navigationBarTitleText": "人脸注册",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			"path": "pages/setting/faceEnroll2",
+			"style": {
+				"navigationBarTitleText": "人脸注册",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/setting/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"enablePullDownRefresh": false
+			}
+		},		{
+			"path": "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#5098FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		// "height":"150rpx",
+		// "iconWidth":"70rpx",
+		"fontSize": "30rpx",
+		"list": [{
+			"text": "功能",
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tab/manage.png",
+			"selectedIconPath": "static/tab/manage-selected.png"
+		}, {
+			"text": "下载中心",
+			"pagePath": "pages/downloadCenter/downloadCenter",
+			"iconPath": "static/tab/file-manage.png",
+			"selectedIconPath": "static/tab/file-manage-selected.png"
+		}, {
+			"text": "我的",
+			"pagePath": "pages/mine/minePage",
+			"iconPath": "static/tab/my.png",
+			"selectedIconPath": "static/tab/my-selected.png"
+		}]
+	}
+}
